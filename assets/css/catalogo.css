@@ -1,0 +1,36 @@
+.catalogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.catalago__titulo{
+    
+    font-size: 60px;
+    font-family: 'Dancing Script', cursive;
+    color: #F9A331;
+}
+
+.search{
+    width: 50%;
+    height: 30px;
+    border-radius: 20px;
+    border-style: none;
+    text-align: center;
+    background-color: #CBC0B4;
+    color: #5A5C48;
+    cursor: pointer;
+    
+}
+
+.product-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8%;
+}
+
+.product-item{
+    display: flex;
+    flex-direction: column;
+}

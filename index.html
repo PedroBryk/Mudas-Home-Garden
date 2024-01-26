@@ -75,11 +75,24 @@
         </section>
         <section class="catalogo">
             <h2 class="catalago__titulo">Catálago</h2>
-            <label for="search">Pesquisar: </label>
-            <input type="text" id="search" oninput="searchProducts()" placeholder="Digite o nome do produto">
+            <input type="text" class="search" id="search" oninput="searchProducts()" placeholder="Buscar Produto">
+
+            <!-- Lista de Produtos -->
+        <ul class="product-list" id="product-list">
+            <li class="product-item">
+                <img class="product-image" src="imagem1.jpg" alt="Produto 1">
+                <span>Produto 1</span>
+            </li>
+            <li class="product-item">
+                <img class="product-image" src="imagem2.jpg" alt="Produto 2">
+                <span>Produto 2</span>
+            </li>
+            <!-- Adicione mais itens conforme necessário -->
+        </ul>
         </section>
 
     </main>
     <script src="https://kit.fontawesome.com/f7d71bae2c.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/search.js"></script>
 </body>
 </html>
