@@ -11,10 +11,44 @@ body{
 nav{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     background-color: #CCB7A0;
     
 }
+
+.navegacao{
+    display: flex;
+    align-items: center;
+}
+
+.navegacao ul li{
+    list-style: none;
+}
+
+.item{
+    text-decoration: none;
+    color: #4f4d4a;
+    display: inline-block;
+    position: relative;
+}
+
+.item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -3px;
+    left: 50%;
+    background-color: #F9A331;
+    transform: translateX(-50%);
+    transform-origin: center;
+    transition: width 0.3s ease-in-out;
+  }
+
+.item:hover::after {
+    width: 100%;
+  }
 
 .logo__container{
     height: 100px;
@@ -23,6 +57,22 @@ nav{
     display: grid;
     place-items: center;
     padding: 0 0 20px 0;
+}
+
+.follow{
+    display: flex;
+    align-items: center;
+    background-color: #CBC0B4;
+    margin-right: 2%;
+    padding-right: 10%;
+}
+
+.follow ul, i, .a-contato{
+    padding-right: 10%;
+    text-decoration: none;
+    color: #4f4d4a;
+    list-style: none;
+    
 }
 
 .logo__mudas__home{
