@@ -1,6 +1,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #9DA48E;
+    overflow-x: hidden;
 }
 
 .cabeçalho{
@@ -72,7 +73,6 @@ nav{
     text-decoration: none;
     color: #4f4d4a;
     list-style: none;
-    
 }
 
 .logo__mudas__home{
@@ -100,4 +100,10 @@ nav{
 .banner__inicial-texto p{
     font-size: 18px;
     color: #4f4d4a;
+}
+
+.como__chegar{
+    height: 100vh;
+    width: 100vw;
+    background-color: #5A5C48;
 }
