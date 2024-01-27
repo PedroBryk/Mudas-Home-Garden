@@ -2,6 +2,7 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: #9DA48E;
     overflow-x: hidden;
+    width: 100%;
 }
 
 .cabeçalho{
@@ -105,11 +106,11 @@ nav{
 }
 
 .como__chegar{
-    height: 100%;
-    width: 100vw;
     background-color: #5A5C48;
     padding: 1%;
     text-align: center;
+    display: grid;
+    place-items: center;
 }
 
 .main__texto{
@@ -209,4 +210,50 @@ nav{
 .rodape img{
     width: 3%;
     padding: 2%;
+}
+
+.grupo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.texto-grupo h2{
+    font-size: 30px;
+    color: #4f4d4a;
+}
+
+.texto-grupo p{
+    font-size: 18px;
+    color: #4f4d4a;
+}
+
+.btn-participar{
+    width: 60%;
+    height: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    border-style: none;
+    text-align: center;
+    margin-top: 2%;
+    background-color: #CBC0B4;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: .5s;
+}
+
+.btn-participar a{
+    text-decoration: none;
+    font-size: 22px;
+    color: #4f4d4a;
+}
+
+.btn-participar:hover{
+    width: 65%;
+    height: 55px;
+    background-color: #5A5C48;
+}
+
+.btn-participar a:hover{
+    color: #F9A331;
 }
