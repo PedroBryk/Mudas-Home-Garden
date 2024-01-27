@@ -145,9 +145,10 @@ nav{
     width: 20%;
 }
 
-.catalogo{
+.catalago{
     height: 100vh;
     width: 100vw;
+    background-color: #CCB7A0;
 }
 
 .mapa__titulo{
@@ -165,4 +166,15 @@ nav{
 .main__texto{
     font-size: 18px;
     color: #CCB7A0;
+}
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape img{
+    width: 3%;
+    padding: 2%;
 }
