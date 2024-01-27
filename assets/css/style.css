@@ -146,9 +146,41 @@ nav{
 }
 
 .catalago{
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
     background-color: #5A5C48;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-explorar{
+    width: 50%;
+    height: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    border-style: none;
+    text-align: center;
+    margin-top: 2%;
+    background-color: #CBC0B4;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: .5s;
+}
+
+.btn-explorar a{
+    text-decoration: none;
+    font-size: 22px;
+    color: #4f4d4a;
+}
+
+.btn-explorar:hover{
+    width: 55%;
+    height: 55px;
+    background-color: #9DA48E;
+}
+
+.btn-explorar a:hover{
+    color: #F9A331;
 }
 
 .mapa__titulo{
@@ -164,7 +196,7 @@ nav{
 }
 
 .main__texto{
-    font-size: 18px;
+    font-size: 22px;
     color: #CCB7A0;
 }
 
