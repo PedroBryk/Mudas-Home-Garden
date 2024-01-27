@@ -20,6 +20,7 @@
     background-color: #CBC0B4;
     color: #5A5C48;
     cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     
 }
 
@@ -27,10 +28,24 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 8%;
+    padding: 0 8% 8% 8%;
 }
 
 .product-item{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    background-color: #CBC0B4;
+    height: 300px;
+    width: 400px;
+    padding: 2%;
+    margin: 2%;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.product-image{
+    width: 70%;
+    
 }

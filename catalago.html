@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/catalogo.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/img/logo__mudas__home.png" type="image/x-icon">
+    <title>Mudas Home | Catalago</title>
+</head>
+<body>
+    <header class="cabeçalho">
+        <nav>
+            <div class="navegacao">
+                <ul>
+                    <li><a class="item" href="index.html">Home</a></li>
+                </ul>
+                <ul>
+                    <li><a class="item" href="">Catálogo</a></li>
+                </ul>
+                <ul>
+                    <li><a class="item" href="">Dicas</a></li>
+                </ul>
+                <ul>
+                    <li><a class="item" href="">Como Chegar</a></li>
+                </ul>
+                <ul>
+                    <li><a class="item" href="">Sobre Nós</a></li>
+                </ul>
+            </div>
+            <div class="follow">
+                <ul>
+                    <li>Contato</li>
+                </ul>
+                <i class="fa-solid fa-arrow-right"></i>
+                <a  class="a-contato" href="https://www.instagram.com/mudashome_santana/"><i class="fa-brands fa-instagram"></i></a>
+                <a class="a-contato" href=""><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </nav>
+        <div class="logo__container">
+            <img src="./assets/img/logo__mudas__home.png" class="logo__mudas__home" alt="Logo mudas home">
+        </div>
+    </header>
+    <main>
+        <section class="catalogo">
+            <h2 class="catalago__titulo">Catálago</h2>
+            <input type="text" class="search" id="search" oninput="searchProducts()" placeholder="Buscar Produto">
+
+            <!-- Lista de Produtos -->
+        <ul class="product-list" id="product-list">
+            <li class="product-item">
+                <img class="product-image" src="./assets/img/produtos/flor__de__natal.png" alt="Produto 1">
+                <span>Flor de Natal</span>
+                <p>natlina flower</p>
+                <button>Verificar disponibilidade</button>
+            </li>
+            <li class="product-item">
+                <img class="product-image" src="./assets/img/produtos/rosa__do__deserto.png" alt="Produto 2">
+                <span>Rosa do Deserto</span>
+                <p>natlina flower</p>
+                <button>Verificar disponibilidade</button>
+            </li>
+            <li class="product-item">
+                <img class="product-image" src="./assets/img/produtos/violeta.png" alt="Produto 2">
+                <span>Violeta</span>
+                <p>natlina flower</p>
+                <button>Verificar disponibilidade</button>
+            </li>
+            <!-- Adicione mais itens conforme necessário -->
+        </ul>
+        </section>
+    </main>
+    <script src="https://kit.fontawesome.com/f7d71bae2c.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/search.js"></script>
+</body>
+</html>

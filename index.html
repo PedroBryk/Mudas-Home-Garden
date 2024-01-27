@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/catalogo.css">
-    <title>Mudas Home Garden</title>
+    <title>Mudas Home</title>
     <link rel="shortcut icon" href="./assets/img/logo__mudas__home.png" type="image/x-icon">
 
 </head>
@@ -24,13 +24,10 @@
                     <li><a class="item" href="index.html">Home</a></li>
                 </ul>
                 <ul>
-                    <li><a class="item" href="">Catálogo</a></li>
+                    <li><a class="item" href="catalago.html">Catálogo</a></li>
                 </ul>
                 <ul>
-                    <li><a class="item" href="">Dicas</a></li>
-                </ul>
-                <ul>
-                    <li><a class="item" href="">Como Chegar</a></li>
+                    <li><a class="item" href="#como__chegar">Como Chegar</a></li>
                 </ul>
                 <ul>
                     <li><a class="item" href="">Sobre Nós</a></li>
@@ -42,7 +39,7 @@
                 </ul>
                 <i class="fa-solid fa-arrow-right"></i>
                 <a  class="a-contato" href="https://www.instagram.com/mudashome_santana/"><i class="fa-brands fa-instagram"></i></a>
-                <a class="a-contato" href=""><i class="fa-brands fa-whatsapp"></i></a>
+                <a class="a-contato" href="https://chat.whatsapp.com/GtXAatfm4tx2AaFG2BbuBd"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
         </nav>
         <div class="logo__container">
@@ -52,16 +49,16 @@
     <main>
         <section class="banner__inicial">
             <div class="img__banner">
-                <img src="./assets/img/imagem__frente__loja.png" alt="Imagem frente loja">
+                <img src="./assets/img/loja__frente-img.png" alt="">
             </div>
             <div class="banner__inicial-texto">
                 <h2>Bem-Vindo</h2>
                 <p>Na nossa floricultura online, você encontrará informações detalhadas sobre cada produto e dicas úteis de cuidados. Estamos aqui para tornar suas escolhas florais simples e significativas.</p>
             </div>
         </section>
-        <section class="como__chegar">
+        <section id="como__chegar" class="como__chegar">
             <h2 class="como__chegar-titulo">Como Chegar</h2>
-            <p class="main__texto">Estamos localizados em dois pontos na cidade de Guarapuava-Pr, no bairro Santana e também na Vila Carly!</p>
+            <p class="main__texto">Estamos localizados em dois pontos na cidade de Guarapuava-Pr, no bairro Santana e também na Vila Carli!</p>
             <div class="mudas__home-container">
                 <h2 class="mapa__titulo"><i class="fa-solid fa-location-dot"></i>Mudas Home Santana</h2>
                 <img class="planta1" src="./assets/img/planta1.png" alt="">
@@ -73,24 +70,6 @@
                 <h2 class="mapa__titulo"><i class="fa-solid fa-location-dot"></i>Mudas Home Garden</h2>
             </div>
         </section>
-        <section class="catalogo">
-            <h2 class="catalago__titulo">Catálago</h2>
-            <input type="text" class="search" id="search" oninput="searchProducts()" placeholder="Buscar Produto">
-
-            <!-- Lista de Produtos -->
-        <ul class="product-list" id="product-list">
-            <li class="product-item">
-                <img class="product-image" src="imagem1.jpg" alt="Produto 1">
-                <span>Produto 1</span>
-            </li>
-            <li class="product-item">
-                <img class="product-image" src="imagem2.jpg" alt="Produto 2">
-                <span>Produto 2</span>
-            </li>
-            <!-- Adicione mais itens conforme necessário -->
-        </ul>
-        </section>
-
     </main>
     <script src="https://kit.fontawesome.com/f7d71bae2c.js" crossorigin="anonymous"></script>
     <script src="./assets/js/search.js"></script>
