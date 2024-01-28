@@ -1,0 +1,153 @@
+.cabeçalho{
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #CCB7A0;
+    position: fixed;
+    
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item{
+    text-decoration: none;
+    color: #4f4d4a;
+    display: block;
+    position: relative;
+    margin-left: 20px;
+}
+
+.item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -3px;
+    left: 50%;
+    background-color: #F9A331;
+    transform: translateX(-50%);
+    transform-origin: center;
+    transition: width 0.3s ease-in-out;
+  }
+
+.item:hover::after {
+    width: 100%;
+  }
+
+.logo__container{
+    height: 100px;
+    width: 100%;
+    background-color: #5A5C48;
+    display: grid;
+    place-items: center;
+    padding: 0 0 20px 0;
+    margin: 3% 0 0 0;
+}
+
+.follow{
+    display: flex;
+    align-items: center;
+    background-color: #CBC0B4;
+    margin-right: 2%;
+    padding-right: 10%;
+}
+
+.follow ul, i, .a-contato{
+    padding-right: 10%;
+    text-decoration: none;
+    color: #4f4d4a;
+    list-style: none;
+}
+
+.logo__mudas__home{
+    width: 140px;
+}
+
+.btnmobile{
+    display: none;
+}
+
+@media(max-width: 600px) {
+
+    .btnmobile{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .hamburguer{
+        border-top: 3px solid #4f4d4a;
+        border-radius: 3px;
+        width: 40px;
+        display: block;
+
+    }
+
+    .hamburguer::after, .hamburguer::before{
+        content: '';
+        display: block;
+        width: 40px;
+        height: 3px;
+        background: #4f4d4a;
+        margin-top: 5px;
+        transition: .5s;
+        position: relative;
+        border-radius: 3px;
+
+    }
+
+    .navegacao.active .hamburguer{
+        border-top-color: transparent;
+    }
+
+    .navegacao.active .hamburguer::before{
+        transform: rotate(135deg);
+    }
+
+    .navegacao.active .hamburguer::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    .menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 0;
+        transition: .9s;
+        top: 30px;
+        padding-top: 7%;
+        right: 0;
+        background-color: #CCB7A0;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    .menu li{
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid #4f4d4a;
+    }
+
+    .navegacao.active .menu{
+        visibility: visible;
+        height: calc(100vh - 30px);
+        overflow-y: auto;
+        
+    }
+}
